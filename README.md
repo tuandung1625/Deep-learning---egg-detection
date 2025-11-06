@@ -26,4 +26,56 @@ Contains all **training and evaluation outputs**, including:
 - TensorFlow / Keras  
 - NumPy, Pandas  
 - Matplotlib
-- OpenCV  
+- OpenCV
+
+---
+
+## How to Run the Project
+
+
+### Install Required Libraries
+Install the necessary Python packages:
+
+```bash
+pip install tensorflow matplotlib numpy opencv-python
+```
+
+### Download the Repository
+
+
+```bash
+git clone https://github.com/tuandung1625/Deep-learning---egg-detection
+cd egg-damage-detection
+```
+
+
+### Add Your Image
+Place the image you want to test inside the project folder.
+
+
+Example:
+```
+egg-damage-detection/
+├─ predict.py
+├─ model/
+├─ your_image.jpg <--- add here
+```
+
+
+### Run the Prediction Script
+
+
+```bash
+python predict.py image_file_name.jpg
+```
+
+
+### Output
+The program will display:
+- Predicted class → Damaged or Not Damaged
+- Model confidence (%)
+
+
+Example:
+```
+Predicted: Damaged (92.5% confidence)
